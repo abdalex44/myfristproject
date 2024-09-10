@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the container horizontally */
+    background-color: #f0f0f0; /* Light background color for better contrast */
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 15px;
+    border: 1px solid skyblue;
+    border-radius: 5px;
+    background-color: #fff; /* White background for the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+}
+input {
+    margin: 5px 0;
+    height: 35px;
+    padding: 7px;
+    border: 1px solid #ccc; /* Border for input fields */
+    border-radius: 5px; /* Rounded corners for input fields */
+    width: 100%; /* Ensure inputs take full width of the container */
+}
+button {
+    height: 35px;
+    margin: 5px 0;
+    background-color: skyblue;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer; /* Pointer cursor for button */
+    width: 100%; /* Ensure button takes full width of the container */
+}
+button:hover {
+    background-color: #333;
+    color: skyblue;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <form>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Email" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+</div>
+</body>
+</html>
